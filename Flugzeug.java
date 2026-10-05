@@ -18,4 +18,19 @@ public class Flugzeug
     {
         return langstrecke;
     }
+    
+    public void setModell(String neuModell)
+    {
+        modell = neuModell;
+    }
+    
+    public void setSitzplaetze(int neuSitzplaetze)
+    {
+        sitzplaetze = neuSitzplaetze;
+    }
+    
+    public void setLangstrecke(boolean neuLangstrecke)
+    {
+        langstrecke = neuLangstrecke;
+    }
 }
