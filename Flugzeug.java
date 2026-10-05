@@ -61,4 +61,9 @@ public class Flugzeug
     {
         langstrecke = neuLangstrecke;
     }
+    
+    public void printFlugzeug()
+    {
+        System.out.println("Flugzeug: " + modell + " - " + sitzplaetze + " - " + langstrecke);
+    }
 }
