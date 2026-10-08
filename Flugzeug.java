@@ -54,7 +54,15 @@ public class Flugzeug
     
     public void setSitzplaetze(int neuSitzplaetze)
     {
-        sitzplaetze = neuSitzplaetze;
+        if ((neuSitzplaetze >= 1) && (neuSitzplaetze <= 900))
+        {
+            sitzplaetze = neuSitzplaetze;   
+        }
+        else 
+        {
+            System.out.println("Fehler: ungültige Anzahl der Sitzplätze!");
+            sitzplaetze = 1;
+        }
     }
     
     public void setLangstrecke(boolean neuLangstrecke)
